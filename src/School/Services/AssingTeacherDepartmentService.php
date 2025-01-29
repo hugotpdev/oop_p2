@@ -24,6 +24,7 @@
         }
 
         function setAssingTeacherDepartmentService($data){
+            // Creo el teacher y lo asigno ya que mi base de datos no permite crear un teacher sin un departament_id
             try {
                 $firstName = isset($data['firstName']) ? $data['firstName'] : null;
                 $lastName = isset($data['lastName']) ? $data['lastName'] : null;
